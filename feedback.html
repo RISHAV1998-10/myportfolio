@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Feedback</title>
+		<link rel="stylesheet" href="style.css"  type="text/css" />
+		<style type="text/css">
+			.main_container{
+				background:linear-gradient(#dc143c,#000000);
+			}
+			.info{
+				width:100%;
+				padding:8px;
+				font-size:25px;
+				font-weight:bold;
+				text-align:center;
+				color:white;
+				text-shadow:1px 1px 4px #000000;
+			}
+			.form-box{
+				padding:40px;
+				
+			}
+			label{
+				font-size:20px;
+				line-height:150%;
+				color:white;
+			}
+			.inp,#msg-box{
+				padding:10px;
+				width:90%;
+				border:2px solid black;
+				border-radius:5px;
+				margin-bottom:5px;
+				margin-top:3px;
+				border-right:20px solid black;
+				border-left:20px solid black;
+				color:navy;
+				box-shadow:2px 2px 10px #fff;
+			}
+			.inp:focus,#msg-box:focus{
+				outline:none;
+				border-right:20px solid steelblue;
+				border-left:20px solid steelblue;
+				border:2px solid steelblue;
+			}
+			#msg-box{
+				resize:none;
+				height:80px;
+			}
+			.sub-btn{
+				width:100%;
+				padding:10px;
+				margin-top:5px;
+				border:none;
+				border-radius:5px;
+				font-size:20px;
+				cursor:pointer;
+				background:linear-gradient(#dc143c,#800000);
+				color:white; 
+			}
+			.sub-btn:focus{
+				outline:none;
+			}
+			.sub-btn:hover{
+				
+				background:linear-gradient(#800000,#dc143c);
+				transition:all ease-out 0.3s;
+				opacity:0.5;
+				filter:alpha(opacity=10);
+			}
+			</style>
+	</head>
+	<body style="background-image:url(landscape-sunset-3.jpg); background-image-size:100% 100%">
+		<div class="nav_bar">
+			<ul>
+				<li><a href="home.html" >Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="feedback.html" id="onlink">Feedback</a></li>
+				<li><a href="contacts.html">Contacts</a></li>
+			</ul>
+		</div>
+		<div class="main_container" >
+			<p>
+				<div class="info" style="animation:fadein 2s ease-in;">Give Your Feedback !</div>
+				<form action="#" method="post" name="form" class="form-box" style="animation:fadein 2s ease-in;">
+					<label for="name">Name</label><br>
+					<input type="text" name="name" class="inp" placeholder="Enter Your Name" required></br>
+					
+					<label for="email">Email Id</label><br>
+					<input type="email" name="email" class="inp" placeholder="Enter Your Email Id" required></br>
+					
+					<label for="phone">Phone</label><br>
+					<input type="tel" name="phone" class="inp" placeholder="Enter Your Phone Number" required></br>
+					
+					<label for="message">Message</label><br>
+					<textarea name="msg" id="msg-box" placeholder="Enter Your Message Here....."></textarea><br>
+					<input type="submit" name="submit" value="Send" class="sub-btn">
+				</form>
+			</p>
+		</div>
+	</body>
+</html>
