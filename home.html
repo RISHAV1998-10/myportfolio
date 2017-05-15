@@ -19,7 +19,42 @@
 			}
 			.faded{
 				
-				animation:hide 2s ease-in,fadein 2s ease-in ;
+				animation:fadeout 2s ease-in;
+				
+			}
+			.loader1{
+				border:16px solid #f3f3f3;
+				border-radius:50%;
+				border-top:16px solid #3498db;
+				width:120px;
+				height:120px;
+				-webkit-animation:spin 2s linear infinite;
+				animation:spin 2s linear infinite;
+				position:relative;
+				top:-250px;
+				left:-240px;
+			}
+			.loader2{
+				border:16px solid #f3f3f3;
+				border-radius:50%;
+				border-top:16px solid #3498db;
+				width:120px;
+				height:120px;
+				-webkit-animation:spin 2s linear infinite;
+				animation:spin 2s linear infinite;
+				position:relative;
+				top:-400px;
+				left:940px;
+			}
+			@-webkit-keyframes spin{
+				0%{-webkit-transform:rotate(0deg);}
+				100%{-webkit-transform:rotate(360deg);}
+			}
+			@keyframes spin{
+				0%{transform:rotate(0deg);
+					}
+				100%{transform:rotate(360deg);
+				}
 			}
 			
 		</style>
@@ -34,7 +69,8 @@
 				<li><a href="contacts.html">Contacts</a></li>
 			</ul>
 		</div>
-		<div class="main_container" style="background:linear-gradient(#fff,darkblue);">
+		
+		<div class="main_container" style="background:linear-gradient(#fff,darkblue);height:500px">
 			<p>
 				<div class="textbox" style="position:relative;top:75px;">
 					<p>It's not what you are<br>
@@ -43,9 +79,14 @@
 						<b>you are not<b><br>
 					</p>
 				</div>
-				<div class="faded" style="position:relative;left:460px; top:-135px;left:550px;">
-					<img src="IMG_20160820_164058.jpg" height="300"  >
+				<div class="loader1"></div>
+				<div class="loader2"></div>
+				<div class="loader3"></div>
+				<div class="loader4"></div>
+				<div class="faded" style="position:relative; top:-350px;left:550px;">
+					<img src="IMG_20160820_164058.jpg" height="300" title="RISHAV CHAKRABORTY" >
 				</div>	
+				
 			</p>
 		</div>
 	</body>
